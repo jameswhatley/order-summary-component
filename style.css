@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: hsl(225, 100%, 94%) url(./images/pattern-background-mobile.svg)
+    no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.3rem;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+p {
+  font-size: 1.6rem;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 2px 1px, rgba(0, 0, 0, 0.03) 0px 4px 2px,
+    rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.03) 0px 16px 8px,
+    rgba(0, 0, 0, 0.03) 0px 32px 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .imgContainer img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.contentContainer {
+  padding: 3rem;
+}
+
+/* Price Card */
+
+.priceCard {
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.75rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  margin: 2.5rem 0;
+}
+
+.priceCard .priceContent.row {
+  gap: 2rem;
+}
+
+.priceCard h3 {
+  margin-bottom: 0.4rem;
+}
+
+.priceCard h3,
+.priceCard p {
+  font-size: 1.4rem;
+}
+
+.priceCard a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Buttons */
+
+.btn {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1em;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pymnt {
+  background-color: rgb(56, 41, 224);
+  color: #fff;
+  box-shadow: rgba(56, 41, 224, 0.04) 0px 2px 1px,
+    rgba(56, 41, 224, 0.04) 0px 4px 2px, rgba(56, 41, 224, 0.04) 0px 8px 4px,
+    rgba(56, 41, 224, 0.04) 0px 16px 8px, rgba(56, 41, 224, 0.04) 0px 32px 16px;
+}
+
+.cancel {
+  margin-top: 0.4rem;
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancelCont {
+  padding-bottom: 0;
+}
+
+.pymnt:hover,
+.change:hover {
+  opacity: 0.6;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 765px) {
+  body {
+    background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg)
+      top / contain no-repeat;
+  }
+}
